@@ -295,6 +295,6 @@ npm init -y
 
 ---
 
-git repo link : https://github.com/programming-hero-web-course2/b12-a9-firesheild-Sihambintahabib-ux.git
+git repo link : https://github.com/Sihambintahabib-ux/assairment-9.git
 <br>
 live link : https://sihambintahabib-assairment-9.surge.sh/services

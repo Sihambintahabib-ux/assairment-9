@@ -7,10 +7,10 @@ import { Link, NavLink } from "react-router";
 import { AuthContext } from "../provider/AuthContext";
 import { use } from "react";
 import { CgProfile } from "react-icons/cg";
-import LOGO from  '../assets/img/logo.png'
+import LOGO from "../assets/img/logo.png";
 
 const Header = () => {
-    const { user, logout } = use(AuthContext);
+  const { user, logout } = use(AuthContext);
 
   const linklogo = (
     <>
@@ -42,11 +42,11 @@ const Header = () => {
       </NavLink>
     </>
   );
-  const handlelogout=(e)=>{
-        e.preventDefault();
-        console.log("handlelogout");
-        logout();
-  }
+  const handlelogout = (e) => {
+    e.preventDefault();
+    console.log("handlelogout");
+    logout();
+  };
   const logInOut = (
     <>
       {!user ? (
@@ -60,9 +60,8 @@ const Header = () => {
         </ul>
       ) : (
         <li className="mx-5 ">
-          {/* <NavLink to="/signup"> */}
-            {" "}
-            <span onClick={handlelogout}>logout</span>
+          {/* <NavLink to="/signup"> */}{" "}
+          <span onClick={handlelogout}>logout</span>
           {/* </NavLink> */}
         </li>
       )}
@@ -124,14 +123,14 @@ const Header = () => {
                     <img
                       className=" z-2 bg-gray-300"
                       alt=""
-                      src={`${user ? user.photoURL : LOGO }`}
+                      src={`${user ? user.photoURL : LOGO}`}
                     />
                   </div>
                   {/* <CgProfile /> */}
                 </NavLink>
                 <span className=" -translate-x-15  text-center    group-hover:translate-x-1 transition">
                   {/* siham  */}
-                  {user ? user.displayName : 'siha....'}
+                  {user ? user.displayName : "siha...."}
                 </span>{" "}
               </div>
               {/* profile datails end */}
